@@ -27,7 +27,7 @@ and open the template in the editor.
             <div id="titulo"></div>
             <div id="menu"><?php include('../menu.php');?></div>
                     <div id="contenido">
-                        <form class="vacaciones form-horizontal" action="../lib/recepcionvacaciones.php" method="get">
+                        <form class="vacaciones form-horizontal" action="../lib/recepcionvacaciones.php" method="POST">
                             <div class="form-group"> 
                                 <label class="col-sm-2 control-label">Rut:</label> 
                                 <div class="col-sm-10">
@@ -41,6 +41,14 @@ and open the template in the editor.
                             <br>Comentario<textarea id="comentario" rows="7" cols=20>   </textarea>
                             <input type="submit" value="Enviar"  >                     
                         </form>
+                        
+                        
+                        <br>
+                        <?php
+                        foreach ($_SESSION[$arrVacaciones] as $resultado){
+                            echo "Datos ingresados " .$resultado."<br>";
+                        }
+                        ?>
                     </div>
         </div>
         <pre>
