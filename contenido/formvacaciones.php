@@ -1,6 +1,7 @@
 <?php
-include('../lib/constantes.php');
 include('../lib/vacaciones.php');
+include('../lib/constantes.php');
+
 
 ?>
 <!DOCTYPE html>
@@ -45,8 +46,8 @@ and open the template in the editor.
                         
                         <br>
                         <?php
-                        foreach ($_SESSION[$arrVacaciones] as $resultado){
-                            echo "Datos ingresados " .$resultado."<br>";
+                        foreach ($_SESSION["$aVacaciones"] as $resultado => $oVacacion){
+                            echo "Datos ingresados ".$resultado."<br>";
                         }
                         ?>
                     </div>

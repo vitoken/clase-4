@@ -1,7 +1,7 @@
 <?php
-
-include('constantes.php');
 include('vacaciones.php');
+include('constantes.php');
+
 
 $oVacacion= new Vacaciones($_POST["rut"],
         $_POST["nombre"],

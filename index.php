@@ -1,6 +1,8 @@
 <?php
-include('lib/constantes.php');
 include('lib/vacaciones.php');
+include('lib/constantes.php');
+
+
 $_SESSION["hm"]="Hola Mundo";
 
 $vacacion= new Vacaciones("1-9",
